@@ -39,7 +39,7 @@
             android:layout_height="64dp"
             android:backgroundTint="@color/white"
             android:text="@string/dark_theme"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:textSize="@dimen/button_text_size"
             android:textAllCaps="false"
             android:stateListAnimator="@null"

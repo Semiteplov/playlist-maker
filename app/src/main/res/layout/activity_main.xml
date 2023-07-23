@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="#3772E7"
+    android:background="@color/blue"
     android:padding="16dp"
     tools:context=".MainActivity">
 
