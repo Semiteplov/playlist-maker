@@ -2,16 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/MatchParentLayoutStyle"
     android:orientation="vertical"
     android:background="@color/white"
     tools:context=".SettingsActivity">
 
     <Button
         android:id="@+id/back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/WrapContentLayoutStyle"
         android:backgroundTint="@color/white"
         android:text="@string/settings"
         android:textColor="@color/primary"
@@ -19,8 +17,7 @@
         android:textAllCaps="false"
         android:stateListAnimator="@null"
         android:paddingVertical="4dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
+        android:paddingHorizontal="12dp"
         android:insetTop="0dp"
         android:insetBottom="0dp"
         app:icon="@drawable/ic_arrow_back"
@@ -29,10 +26,7 @@
         app:iconTint="@color/primary" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="24dp"
-        android:orientation="vertical">
+        style="@style/VerticalLinearLayoutStyle">
 
         <Switch
             android:layout_width="match_parent"
@@ -48,53 +42,19 @@
             tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
             android:text="@string/share_app"
-            style="@style/Widget.AppCompat.CompoundButton.Switch"
-            android:textSize="@dimen/button_text_size"
-            android:textAlignment="textStart"
-            android:textAllCaps="false"
-            android:stateListAnimator="@null"
-            android:paddingVertical="@dimen/vertical_padding"
-            android:paddingHorizontal="@dimen/horizontal_padding"
             android:drawableEnd="@drawable/ic_share"
-            app:iconPadding="@dimen/button_icon_padding"
-            app:iconTint="@color/primary" />
+            style="@style/SettingsButtonStyle" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
             android:text="@string/support"
-            style="@style/Widget.AppCompat.CompoundButton.Switch"
-            android:textSize="@dimen/button_text_size"
-            android:textAlignment="textStart"
-            android:textAllCaps="false"
-            android:stateListAnimator="@null"
-            android:paddingVertical="@dimen/vertical_padding"
-            android:paddingHorizontal="@dimen/horizontal_padding"
             android:drawableEnd="@drawable/ic_support"
-            app:iconPadding="@dimen/button_icon_padding"
-            app:iconTint="@color/primary" />
+            style="@style/SettingsButtonStyle" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
             android:text="@string/terms_of_use"
-            style="@style/Widget.AppCompat.CompoundButton.Switch"
-            android:textSize="@dimen/button_text_size"
-            android:textAlignment="textStart"
-            android:textAllCaps="false"
-            android:stateListAnimator="@null"
-            android:paddingVertical="@dimen/vertical_padding"
-            android:paddingHorizontal="@dimen/horizontal_padding"
             android:drawableEnd="@drawable/ic_arrow_forward"
-            app:iconPadding="@dimen/button_icon_padding"
-            app:iconTint="@color/primary" />
+            style="@style/SettingsButtonStyle" />
 
     </LinearLayout>
-
-    </LinearLayout>
+</LinearLayout>
