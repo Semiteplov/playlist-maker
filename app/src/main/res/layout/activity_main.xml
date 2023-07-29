@@ -13,7 +13,8 @@
         android:layout_gravity="start"
         android:text="@string/playlist_maker"
         android:textColor="@color/white"
-        android:textSize="26sp" />
+        android:textSize="@dimen/primary_text_size"
+        android:fontFamily="@font/ys_text_medium" />
 
     <LinearLayout
         style="@style/VerticalLinearLayoutStyle">

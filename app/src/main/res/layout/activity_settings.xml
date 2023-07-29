@@ -20,6 +20,7 @@
         android:paddingHorizontal="12dp"
         android:insetTop="0dp"
         android:insetBottom="0dp"
+        android:fontFamily="@font/ys_text_medium"
         app:icon="@drawable/ic_arrow_back"
         app:iconGravity="textStart"
         app:iconPadding="@dimen/button_icon_padding"
@@ -39,6 +40,7 @@
             android:stateListAnimator="@null"
             android:paddingVertical="@dimen/vertical_padding"
             android:paddingHorizontal="@dimen/horizontal_padding"
+            android:fontFamily="@font/ys_text_regular"
             tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <Button
