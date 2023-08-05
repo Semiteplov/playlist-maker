@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/MatchParentLayoutStyle"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="?attr/colorSecondary"
     tools:context=".SettingsActivity">
 
     <Button
         android:id="@+id/back_button"
         style="@style/WrapContentLayoutStyle"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="?attr/colorSecondary"
         android:text="@string/settings"
-        android:textColor="@color/primary"
+        android:textColor="?attr/colorOnSecondary"
         android:textSize="@dimen/primary_text_size"
         android:textAllCaps="false"
         android:stateListAnimator="@null"
@@ -24,7 +24,7 @@
         app:icon="@drawable/ic_arrow_back"
         app:iconGravity="textStart"
         app:iconPadding="@dimen/button_icon_padding"
-        app:iconTint="@color/primary" />
+        app:iconTint="?attr/colorOnSecondary" />
 
     <LinearLayout
         style="@style/VerticalLinearLayoutStyle">
@@ -33,14 +33,14 @@
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:backgroundTint="@color/white"
-            android:text="@string/dark_theme"
-            android:textColor="@color/black"
-            android:textSize="@dimen/button_text_size"
-            android:textAllCaps="false"
-            android:stateListAnimator="@null"
-            android:paddingVertical="@dimen/vertical_padding"
-            android:paddingHorizontal="@dimen/horizontal_padding"
             android:fontFamily="@font/ys_text_regular"
+            android:paddingHorizontal="@dimen/horizontal_padding"
+            android:paddingVertical="@dimen/vertical_padding"
+            android:stateListAnimator="@null"
+            android:text="@string/dark_theme"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="@dimen/button_text_size"
             tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <Button
